@@ -6,7 +6,8 @@ import Welcome from '../screens/Welcome';
 import Topics from '../screens/Topics';
 import TopicDetails from '../screens/Topics/TopicDetails';
 import Levels from '../screens/Levels';
-import LevelDetails from '../screens/Levels/LevelDetails';
+import Lessons from '../screens/Levels/Lessons';
+import Exercises from '../screens/Levels/Exercises';
 import Result from '../screens/Result';
 import ResultDetails from '../screens/Result/ResultDetails';
 
@@ -25,7 +26,8 @@ const TopicsStack = createStackNavigator(
 const LevelsStack = createStackNavigator(
   {
     Levels: Levels,
-    LevelDetails: LevelDetails,
+    Lessons: Lessons,
+    Exercises: Exercises,
   },
   hideHeader,
 );

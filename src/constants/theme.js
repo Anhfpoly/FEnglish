@@ -50,6 +50,12 @@ const welcome = StyleSheet.create({
     color: '#F9F871',
     backgroundColor: 'transparent',
   },
+  flogo2: {
+    fontSize: 23,
+    textAlign: 'center',
+    color: '#fff',
+    backgroundColor: 'transparent',
+  },
 });
 const topic = StyleSheet.create({
   container: {
@@ -84,7 +90,51 @@ const topic = StyleSheet.create({
     margin: 30,
   },
 });
-const lvdetail = StyleSheet.create({
+const lesson = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  level: {
+    fontSize: 36,
+    color: colors.blue,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  unit: {
+    fontSize: 26,
+    color: colors.lightBlue,
+    fontWeight: 'bold',
+    marginBottom: 30,
+  },
+  wrapImg: {
+    width: 320,
+    height: 320,
+    borderColor: colors.black,
+    borderWidth: 2,
+    borderRadius: 26,
+    overflow: 'hidden',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  img: {
+    width: 300,
+    height: 300,
+  },
+  vocabulary: {
+    fontSize: 23,
+    color: '#ff4800',
+    fontWeight: 'bold',
+    marginBottom: 30,
+  },
+  btnView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 100,
+  },
+});
+const exercise = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -131,6 +181,7 @@ const lvdetail = StyleSheet.create({
 const theme = {
   welcome,
   topic,
-  lvdetail,
+  lesson,
+  exercise,
 };
 export default theme;

@@ -20,7 +20,7 @@ export default class Levels extends Component {
     }
   }
   _onPressLevel = (value, value2) => {
-    this.props.navigation.navigate('LevelDetails', {levels: value, topics: value2});
+    this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
   };
   render() {
     const {topics} = this.props.navigation.state.params;

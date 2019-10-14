@@ -11,6 +11,7 @@ export const images = {
 export const DATA = [
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'apple.png',
     question: 'Guess the names of these fruits',
     option1: 'Apple',
@@ -21,6 +22,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'banana.png',
     question: 'Guess the names of these fruits',
     option1: 'Apple',
@@ -31,6 +33,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'orange.png',
     question: 'Guess the names of these fruits',
     option1: 'Grape',
@@ -41,6 +44,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'watermelon.png',
     question: 'Guess the names of these fruits',
     option1: 'Apple',
@@ -51,6 +55,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'grape.png',
     question: 'Guess the names of these fruits',
     option1: 'Grape',
@@ -61,6 +66,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'mango.png',
     question: 'Guess the names of these fruits',
     option1: 'Apple',
@@ -71,6 +77,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'strawberry.png',
     question: 'Guess the names of these fruits',
     option1: 'Strawberry',
@@ -81,6 +88,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'pineapple.png',
     question: 'Guess the names of these fruits',
     option1: 'Apple',
@@ -91,6 +99,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'kiwi.png',
     question: 'Guess the names of these fruits',
     option1: 'Apple',
@@ -101,6 +110,7 @@ export const DATA = [
   },
   {
     topic: 'fruits',
+    level: 'lv1',
     imgurl: 'peach.png',
     question: 'Guess the names of these fruits',
     option1: 'Kiwi Fruit',
@@ -111,6 +121,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'red.png',
     question: 'Guess the names of these colors',
     option1: 'Red',
@@ -121,6 +132,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'yellow.png',
     question: 'Guess the names of these colors',
     option1: 'Yellow',
@@ -131,6 +143,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'blue.png',
     question: 'Guess the names of these colors',
     option1: 'Green',
@@ -141,6 +154,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'green.png',
     question: 'Guess the names of these colors',
     option1: 'Red',
@@ -151,6 +165,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'pink.png',
     question: 'Guess the names of these colors',
     option1: 'Brown',
@@ -161,6 +176,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'purple.png',
     question: 'Guess the names of these colors',
     option1: 'Yellow',
@@ -171,6 +187,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'orange.png',
     question: 'Guess the names of these colors',
     option1: 'Blue',
@@ -181,6 +198,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'brown.png',
     question: 'Guess the names of these colors',
     option1: 'Blue',
@@ -191,6 +209,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'black.png',
     question: 'Guess the names of these colors',
     option1: 'White',
@@ -201,6 +220,7 @@ export const DATA = [
   },
   {
     topic: 'colors',
+    level: 'lv1',
     imgurl: 'white.png',
     question: 'Guess the names of these colors',
     option1: 'Pink',
@@ -211,6 +231,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'cat.png',
     question: 'Guess the names of these animals',
     option1: 'Cat',
@@ -221,6 +242,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'mouse.png',
     question: 'Guess the names of these animals',
     option1: 'Cat',
@@ -231,6 +253,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'pig.png',
     question: 'Guess the names of these animals',
     option1: 'Cat',
@@ -241,6 +264,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'dog.png',
     question: 'Guess the names of these animals',
     option1: 'Mouse',
@@ -251,6 +275,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'duck.png',
     question: 'Guess the names of these animals',
     option1: 'Sheep',
@@ -261,6 +286,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'sheep.png',
     question: 'Guess the names of these animals',
     option1: 'Sheep',
@@ -271,6 +297,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'chicken.png',
     question: 'Guess the names of these animals',
     option1: 'Bird',
@@ -281,6 +308,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'horse.png',
     question: 'Guess the names of these animals',
     option1: 'Mouse',
@@ -291,6 +319,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'turtle.png',
     question: 'Guess the names of these animals',
     option1: 'Horse',
@@ -301,6 +330,7 @@ export const DATA = [
   },
   {
     topic: 'animals',
+    level: 'lv1',
     imgurl: 'fish.png',
     question: 'Guess the names of these animals',
     option1: 'Turtle',
@@ -311,6 +341,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'ice_cream.png',
     question: 'Guess the names of these foods',
     option1: 'Meat',
@@ -321,6 +352,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'hamburger.png',
     question: 'Guess the names of these foods',
     option1: 'Fish',
@@ -331,6 +363,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'sandwich.png',
     question: 'Guess the names of these foods',
     option1: 'Hamburger',
@@ -341,6 +374,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'french_fries.png',
     question: 'Guess the names of these foods',
     option1: 'Cheese',
@@ -351,6 +385,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'butter.png',
     question: 'Guess the names of these foods',
     option1: 'Butter',
@@ -361,6 +396,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'cheese.png',
     question: 'Guess the names of these foods',
     option1: 'Butter',
@@ -371,6 +407,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'spaghetti.png',
     question: 'Guess the names of these foods',
     option1: 'Noodle',
@@ -381,6 +418,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'rice.png',
     question: 'Guess the names of these foods',
     option1: 'Noodle',
@@ -391,6 +429,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'noodle.png',
     question: 'Guess the names of these foods',
     option1: 'Rice',
@@ -401,6 +440,7 @@ export const DATA = [
   },
   {
     topic: 'foods',
+    level: 'lv1',
     imgurl: 'pork.png',
     question: 'Guess the names of these foods',
     option1: 'Pork',
@@ -411,6 +451,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'board.png',
     question: 'Guess the names of these stationaries',
     option1: 'Chalk',
@@ -421,6 +462,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'calculator.png',
     question: 'Guess the names of these stationaries',
     option1: 'Pen',
@@ -431,6 +473,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'pen.png',
     question: 'Guess the names of these stationaries',
     option1: 'Eraser',
@@ -441,6 +484,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'chalk.png',
     question: 'Guess the names of these stationaries',
     option1: 'Pen',
@@ -451,6 +495,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'crayon.png',
     question: 'Guess the names of these stationaries',
     option1: 'Pen',
@@ -461,6 +506,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'ruler.png',
     question: 'Guess the names of these stationaries',
     option1: 'Pen',
@@ -471,6 +517,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'eraser.png',
     question: 'Guess the names of these stationaries',
     option1: 'Ruler',
@@ -481,6 +528,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'backpack.png',
     question: 'Guess the names of these stationaries',
     option1: 'Glue',
@@ -491,6 +539,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'glue.png',
     question: 'Guess the names of these stationaries',
     option1: 'Pen',
@@ -501,6 +550,7 @@ export const DATA = [
   },
   {
     topic: 'stationaries',
+    level: 'lv1',
     imgurl: 'paper.png',
     question: 'Guess the names of these stationaries',
     option1: 'Calculator',
@@ -511,6 +561,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'teacher.png',
     question: 'Guess the names of these jobs',
     option1: 'Police',
@@ -521,6 +572,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'police.png',
     question: 'Guess the names of these jobs',
     option1: 'Police',
@@ -531,6 +583,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'fire_fighter.png',
     question: 'Guess the names of these jobs',
     option1: 'Doctor',
@@ -541,6 +594,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'doctor.png',
     question: 'Guess the names of these jobs',
     option1: 'Vet',
@@ -551,6 +605,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'nurse.png',
     question: 'Guess the names of these jobs',
     option1: 'Vet',
@@ -561,6 +616,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'vet.png',
     question: 'Guess the names of these jobs',
     option1: 'Nurse',
@@ -571,6 +627,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'farmer.png',
     question: 'Guess the names of these jobs',
     option1: 'Farmer',
@@ -581,6 +638,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'engineer.png',
     question: 'Guess the names of these jobs',
     option1: 'Vet',
@@ -591,6 +649,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'plumber.png',
     question: 'Guess the names of these jobs',
     option1: 'Doctor',
@@ -601,6 +660,7 @@ export const DATA = [
   },
   {
     topic: 'jobs',
+    level: 'lv1',
     imgurl: 'actor.png',
     question: 'Guess the names of these jobs',
     option1: 'Singer',

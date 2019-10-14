@@ -75,7 +75,7 @@ const topic = StyleSheet.create({
     marginHorizontal: 10,
   },
   viewTopic: {
-    flex: 1,
+    width: '50%',
     justifyContent: 'center',
     alignItems: 'center',
     width: 120,

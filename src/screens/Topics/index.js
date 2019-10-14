@@ -9,8 +9,8 @@ export default class Topics extends Component {
   state = {
     topics: '',
   };
-  _onPressSubmit = () => {
-    this.props.navigation.navigate('Levels', {topics: this.state.topics});
+  _onPressSubmit = (value) => {
+    this.props.navigation.navigate('Levels', {topics: value});
   };
   render() {
     const {name} = this.props.navigation.state.params;
@@ -22,37 +22,43 @@ export default class Topics extends Component {
             <View style={theme.topic.blockTopic}>
               <TopicBlock
                 title={'Hoa Quả'}
+                hideTitle={true}
                 imgTopic={images.topic1}
-                onPressSubmit={this._onPressSubmit}
+                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Hoa Quả')}
               />
               <TopicBlock
                 title={'Màu Sắc'}
+                hideTitle={true}
                 imgTopic={images.topic2}
-                onPressSubmit={this._onPressSubmit}
+                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Màu Sắc')}
               />
             </View>
             <View style={theme.topic.blockTopic}>
               <TopicBlock
                 title={'Món Ăn'}
+                hideTitle={true}
                 imgTopic={images.topic3}
-                onPressSubmit={this._onPressSubmit}
+                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Món Ăn')}
               />
               <TopicBlock
                 title={'Vật Dụng'}
+                hideTitle={true}
                 imgTopic={images.topic4}
-                onPressSubmit={this._onPressSubmit}
+                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Vật Dụng')}
               />
             </View>
             <View style={theme.topic.blockTopic}>
               <TopicBlock
                 title={'Động Vật'}
+                hideTitle={true}
                 imgTopic={images.topic5}
-                onPressSubmit={this._onPressSubmit}
+                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Động Vật')}
               />
               <TopicBlock
                 title={'Nghề Nghiệp'}
+                hideTitle={true}
                 imgTopic={images.topic6}
-                onPressSubmit={this._onPressSubmit}
+                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Nghề Nghiệp')}
               />
             </View>
           </View>

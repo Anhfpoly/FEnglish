@@ -1,4 +1,5 @@
 export const images = {
+  star: require('../assets/images/star.png'),
   topic1: require('../assets/images/apple.png'),
   topic2: require('../assets/images/apple.png'),
   topic3: require('../assets/images/apple.png'),

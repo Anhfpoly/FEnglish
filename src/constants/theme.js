@@ -52,14 +52,20 @@ const welcome = StyleSheet.create({
   },
 });
 const topic = StyleSheet.create({
-  container:{
+  container: {
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
-    color: '#000',
-    fontSize: 20
+    color: '#a01fbd',
+    fontSize: 26,
+    fontFamily: fonts.alina,
+  },
+  scores: {
+    color: '#ff4800',
+    fontSize: 26,
+    fontFamily: fonts.alina,
   },
   blockTopic: {
     flex: 1,
@@ -68,7 +74,7 @@ const topic = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 10,
   },
-  viewTopic:{
+  viewTopic: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -76,7 +82,7 @@ const topic = StyleSheet.create({
     height: 120,
     borderRadius: 50,
     margin: 30,
-  }
+  },
 });
 const theme = {
   welcome,

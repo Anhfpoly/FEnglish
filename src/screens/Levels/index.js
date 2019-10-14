@@ -9,6 +9,8 @@ export default class Levels extends Component {
   state = {
     scores: 10,
     opacity: 0.2,
+    levels: 0,
+    topics: '',
   };
   componentDidMount() {
     if (this.state.scores > 0) {
@@ -17,7 +19,9 @@ export default class Levels extends Component {
       this.setState({opacity: 0.2});
     }
   }
-  _status = () => {};
+  _onPressLevel = (value, value2) => {
+    this.props.navigation.navigate('LevelDetails', {levels: value, topics: value2});
+  };
   render() {
     const {topics} = this.props.navigation.state.params;
     const {scores} = this.state;
@@ -50,77 +54,11 @@ export default class Levels extends Component {
                   imgTopic={images.star}
                   type='questions'
                   scores={item.score}
-                  onPressSubmit={this._onPressSubmit}
+                  onPressSubmit={()=>this._onPressLevel(item.level, topics)}
                 />
               ))}
             </View>
           </View>
-          {/* <View style={theme.topic.container}>
-            <View style={theme.topic.blockTopic}>
-              <TopicBlock
-                title={'Cấp độ 1'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-              <TopicBlock
-                title={'Cấp độ 2'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-            </View>
-            <View style={theme.topic.blockTopic}>
-              <TopicBlock
-                title={'Cấp độ 3'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-              <TopicBlock
-                title={'Cấp độ 4'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-            </View>
-            <View style={theme.topic.blockTopic}>
-              <TopicBlock
-                title={'Cấp độ 5'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-              <TopicBlock
-                title={'Cấp độ 6'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-            </View>
-            <View style={theme.topic.blockTopic}>
-              <TopicBlock
-                title={'Level 7'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-              <TopicBlock
-                title={'Level 8'}
-                imgTopic={images.star}
-                scores={scores + '/10đ'}
-                opacity={this.state.opacity}
-                onPressSubmit={this._onPressSubmit}
-              />
-            </View>
-          </View> */}
         </View>
       </SafeAreaView>
     );

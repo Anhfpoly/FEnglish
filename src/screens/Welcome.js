@@ -28,7 +28,12 @@ export default class Welcome extends Component {
           value={this.state.nameValue}
           onChangeText={this._onChangeText}
         />
-        <Button btnValue={'Bắt đầu nào!'} onPressSubmit={this._onPressSubmit} />
+        <Button
+          btnValue={'Bắt đầu nào!'}
+          name={'language'}
+          onPressSubmit={this._onPressSubmit}
+          colorButton={'#FF6F91'}
+        />
       </LinearGradient>
     );
   }

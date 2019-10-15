@@ -144,7 +144,7 @@ const exercise = StyleSheet.create({
     fontSize: 36,
     color: colors.blue,
     fontWeight: 'bold',
-    marginBottom: 20,
+    margin: 10,
   },
   unit: {
     fontSize: 26,
@@ -153,8 +153,8 @@ const exercise = StyleSheet.create({
     marginBottom: 30,
   },
   wrapImg: {
-    width: 320,
-    height: 320,
+    width: 160,
+    height: 160,
     borderColor: colors.black,
     borderWidth: 2,
     borderRadius: 26,
@@ -163,14 +163,14 @@ const exercise = StyleSheet.create({
     alignItems: 'center',
   },
   img: {
-    width: 300,
-    height: 300,
+    width: 130,
+    height: 130,
   },
   vocabulary: {
-    fontSize: 23,
+    fontSize: 18,
     color: '#ff4800',
     fontWeight: 'bold',
-    marginBottom: 30,
+    margin: 10,
   },
   btnView: {
     flexDirection: 'row',

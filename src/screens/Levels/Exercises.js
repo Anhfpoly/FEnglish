@@ -6,93 +6,181 @@ import theme from '../../constants/theme';
 import {images} from '../../data/data';
 import data from '../../data/data';
 import {Button, Answer} from '../../components';
-
+import Tts from 'react-native-tts';
+import {shuffle} from '../../utils/misc';
+Tts.setDefaultLanguage('en-IE');
 export default class Exercises extends Component {
   static navigationOptions = {header: null};
   state = {
     scores: 10,
     isStartLesson: false,
-    colorOption1: '#929798',
-    colorOption2: '#929798',
-    colorOption3: '#929798',
-    colorOption4: '#929798',
+    colorOption: '#929798',
+    questionIndex: 0,
+    isSelected: false,
+    userSelected: '',
+    newFiltered: null,
+    curPoint: 0,
   };
-  _onPressAnswer = (value, value2) => {
-    //Đáp án 1
-    if (value === 'option1' && value2 === 'true') {
-      this.setState({colorOption1: '#31BB62'});
-    } else if (value === 'option1' && value2 === 'false') {
-      this.setState({colorOption1: '#ff4800'});
-    }
-    //Đáp án 2
-    if (value === 'option2' && value2 === 'true') {
-      this.setState({colorOption2: '#31BB62'});
-    } else if (value === 'option2' && value2 === 'false') {
-      this.setState({colorOption2: '#ff4800'});
-    }
-    //Đáp án 3    
-    if (value === 'option3' && value2 === 'true') {
-      this.setState({colorOption3: '#31BB62'});
-    } else if (value === 'option3' && value2 === 'false') {
-      this.setState({colorOption3: '#ff4800'});
-    }
-    //Đáp án 4    
-    if (value === 'option4' && value2 === 'true') {
-      this.setState({colorOption4: '#31BB62'});
-    } else if (value === 'option4' && value2 === 'false') {
-      this.setState({colorOption4: '#ff4800'});
-    }
-  };
+
   _onPressNext = () => {
-    alert('Next');
-  };
-  _onPressRepeat = () => {
-    alert('Repeat');
+    if (this.state.isSelected) {
+      const {levels, topics, filteredData} = this.props.navigation.state.params;
+      if (this.state.questionIndex < filteredData.length - 1) {
+        this.setState(
+          {
+            questionIndex: this.state.questionIndex + 1,
+            isSelected: false,
+            userSelected: '',
+          },
+          () => this._shuffleQuestion(),
+        );
+      } else {
+        this.props.navigation.navigate('Result', {
+          point: this.state.curPoint,
+          levels,
+          topics,
+        });
+      }
+    } else {
+      alert('Hãy chọn đáp án!!!');
+    }
   };
   _changeStatus = () => {
     this.setState({isStartLesson: !this.state.isStartLesson});
   };
+  _checkAnswer = value => {
+    const {filteredData} = this.props.navigation.state.params;
+    const {questionIndex} = this.state;
+    this.setState({
+      isSelected: true,
+      userSelected: value,
+      curPoint:
+        filteredData[questionIndex].answer === value
+          ? this.state.curPoint + 1
+          : this.state.curPoint,
+    });
+    Tts.stop();
+    Tts.getInitStatus().then(() => {
+      Tts.speak(value);
+    });
+  };
+
+  componentDidMount() {
+    this._shuffleQuestion();
+  }
+  _shuffleQuestion = () => {
+    const {filteredData} = this.props.navigation.state.params;
+    const {questionIndex} = this.state;
+    let newFiltered = shuffle(filteredData[questionIndex].questions);
+    this.setState({newFiltered});
+  };
+  _renderQuestion = () => {
+    const {newFiltered} = this.state;
+    const {filteredData} = this.props.navigation.state.params;
+    const {questionIndex} = this.state;
+    return (
+      <>
+        <Answer
+          disabled={this.state.isSelected}
+          answer={newFiltered[0]}
+          colorAnswer={[
+            this.state.isSelected
+              ? newFiltered[0] === filteredData[questionIndex].answer
+                ? '#31BB62'
+                : '#ff4800'
+              : '#929798',
+          ]}
+          overideStyle={
+            this.state.userSelected === newFiltered[0] && {
+              borderColor: '#000',
+              borderWidth: 2,
+            }
+          }
+          onPressAnswer={() => this._checkAnswer(newFiltered[0])}
+        />
+        <Answer
+          disabled={this.state.isSelected}
+          answer={newFiltered[1]}
+          colorAnswer={[
+            this.state.isSelected
+              ? newFiltered[1] === filteredData[questionIndex].answer
+                ? '#31BB62'
+                : '#ff4800'
+              : '#929798',
+          ]}
+          overideStyle={
+            this.state.userSelected === newFiltered[1] && {
+              borderColor: '#000',
+              borderWidth: 2,
+            }
+          }
+          onPressAnswer={() => this._checkAnswer(newFiltered[1])}
+        />
+        <Answer
+          disabled={this.state.isSelected}
+          answer={newFiltered[2]}
+          colorAnswer={[
+            this.state.isSelected
+              ? newFiltered[2] === filteredData[questionIndex].answer
+                ? '#31BB62'
+                : '#ff4800'
+              : '#929798',
+          ]}
+          overideStyle={
+            this.state.userSelected === newFiltered[2] && {
+              borderColor: '#000',
+              borderWidth: 2,
+            }
+          }
+          onPressAnswer={() => this._checkAnswer(newFiltered[2])}
+        />
+        <Answer
+          disabled={this.state.isSelected}
+          answer={newFiltered[3]}
+          colorAnswer={[
+            this.state.isSelected
+              ? newFiltered[3] === filteredData[questionIndex].answer
+                ? '#31BB62'
+                : '#ff4800'
+              : '#929798',
+          ]}
+          overideStyle={
+            this.state.userSelected === newFiltered[3] && {
+              borderColor: '#000',
+              borderWidth: 2,
+            }
+          }
+          onPressAnswer={() => this._checkAnswer(newFiltered[3])}
+        />
+      </>
+    );
+  };
   render() {
-    const {levels, topics} = this.props.navigation.state.params;
-    const {item} = this.state;
+    const {levels, topics, filteredData} = this.props.navigation.state.params;
     return (
       <SafeAreaView style={{flex: 1}}>
         <Header title={topics} />
         {this.state.isStartLesson ? (
           <View style={theme.exercise.container}>
             <Text style={theme.exercise.level}>Cấp Độ {levels}</Text>
-            <Text style={theme.exercise.unit}>Bài tập 1</Text>
+            <Text style={theme.exercise.unit}>
+              Câu số {this.state.questionIndex + 1}
+            </Text>
             <View style={theme.exercise.wrapImg}>
-              <Image source={images.topic1} style={theme.exercise.img}></Image>
+              <Image
+                source={filteredData[this.state.questionIndex].imgurl}
+                style={theme.exercise.img}
+                resizeMode={'cover'}></Image>
             </View>
-            <Text style={theme.exercise.vocabulary}>Câu hỏi?</Text>
-            <View>
-              <Answer
-                answer={'Đáp án 1'}
-                colorAnswer={this.state.colorOption1}
-                onPressAnswer={() => this._onPressAnswer('option1', 'true')}
-              />
-              <Answer
-                answer={'Đáp án 2'}
-                colorAnswer={this.state.colorOption2}
-                onPressAnswer={() => this._onPressAnswer('option2', 'false')}
-              />
-              <Answer
-                answer={'Đáp án 3'}
-                colorAnswer={this.state.colorOption3}
-                onPressAnswer={() => this._onPressAnswer('option3', 'false')}
-              />
-              <Answer
-                answer={'Đáp án 4'}
-                colorAnswer={this.state.colorOption4}
-                onPressAnswer={() => this._onPressAnswer('option4', 'false')}
-              />
-            </View>
+            <Text style={theme.exercise.vocabulary}>
+              {filteredData[this.state.questionIndex].question}
+            </Text>
+            <View>{this._renderQuestion()}</View>
             <View style={theme.exercise.btnView}>
               <Button
                 name={'controller-next'}
-                colorButton={'#FF6F91'}
-                btnValue={'Bài tiếp theo'}
+                colorButton={this.state.isSelected ? '#FF6F91' : '#929798'}
+                btnValue={'Câu tiếp theo'}
                 onPressSubmit={this._onPressNext}
               />
             </View>

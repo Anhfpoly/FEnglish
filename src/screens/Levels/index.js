@@ -3,6 +3,7 @@ import {Text, View, SafeAreaView, ScrollView} from 'react-native';
 import {TextInput, Button, Header, TopicBlock} from '../../components';
 import theme from '../../constants/theme';
 import {images} from '../../data/data';
+import { getData } from '../../utils/misc';
 
 export default class Levels extends Component {
   static navigationOptions = {header: null};
@@ -11,6 +12,7 @@ export default class Levels extends Component {
     opacity: 0.2,
     levels: 0,
     topics: '',
+    pointsData: null
   };
   componentDidMount() {
     if (this.state.scores > 0) {
@@ -18,6 +20,13 @@ export default class Levels extends Component {
     } else {
       this.setState({opacity: 0.2});
     }
+    this._getPoints()
+  }
+  _getPoints = async () => {
+    let response = await getData('points');
+    let pointsData = JSON.parse(response);
+    console.log(pointsData)
+    this.setState({pointsData})
   }
   _onPressLevel = (value, value2) => {
     this.props.navigation.navigate('Lessons', {levels: value, topics: value2});

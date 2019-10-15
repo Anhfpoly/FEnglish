@@ -70,7 +70,7 @@ const topic = StyleSheet.create({
   },
   scores: {
     color: '#ff4800',
-    fontSize: 26,
+    fontSize: 23,
     fontFamily: fonts.alina,
   },
   blockTopic: {
@@ -97,20 +97,20 @@ const lesson = StyleSheet.create({
     alignItems: 'center',
   },
   level: {
-    fontSize: 36,
+    fontSize: 26,
     color: colors.blue,
     fontWeight: 'bold',
-    marginBottom: 20,
+    margin: 10,
   },
   unit: {
-    fontSize: 26,
+    fontSize: 20,
     color: colors.lightBlue,
     fontWeight: 'bold',
     marginBottom: 30,
   },
   wrapImg: {
-    width: 320,
-    height: 320,
+    width: 280,
+    height: 280,
     borderColor: colors.black,
     borderWidth: 2,
     borderRadius: 26,
@@ -119,8 +119,8 @@ const lesson = StyleSheet.create({
     alignItems: 'center',
   },
   img: {
-    width: 300,
-    height: 300,
+    width: 260,
+    height: 260,
   },
   vocabulary: {
     fontSize: 23,
@@ -141,16 +141,16 @@ const exercise = StyleSheet.create({
     alignItems: 'center',
   },
   level: {
-    fontSize: 36,
+    fontSize: 26,
     color: colors.blue,
     fontWeight: 'bold',
-    margin: 10,
+    marginTop: 100,
   },
   unit: {
-    fontSize: 26,
+    fontSize: 20,
     color: colors.lightBlue,
     fontWeight: 'bold',
-    marginBottom: 30,
+    marginBottom: 10,
   },
   wrapImg: {
     width: 160,
@@ -175,7 +175,14 @@ const exercise = StyleSheet.create({
   btnView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 100,
+    marginBottom: 120,
+  },
+});
+const result = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 const theme = {
@@ -183,5 +190,6 @@ const theme = {
   topic,
   lesson,
   exercise,
+  result,
 };
 export default theme;

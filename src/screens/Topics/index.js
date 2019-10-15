@@ -24,13 +24,13 @@ export default class Topics extends Component {
                 title={'Hoa Quả'}
                 hideTitle={true}
                 imgTopic={images.topic1}
-                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Hoa Quả')}
+                onPressSubmit={()=>this._onPressSubmit('fruits')}
               />
               <TopicBlock
                 title={'Màu Sắc'}
                 hideTitle={true}
                 imgTopic={images.topic2}
-                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Màu Sắc')}
+                onPressSubmit={()=>this._onPressSubmit('colors')}
               />
             </View>
             <View style={theme.topic.blockTopic}>
@@ -38,13 +38,13 @@ export default class Topics extends Component {
                 title={'Món Ăn'}
                 hideTitle={true}
                 imgTopic={images.topic3}
-                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Món Ăn')}
+                onPressSubmit={()=>this._onPressSubmit('foods')}
               />
               <TopicBlock
                 title={'Vật Dụng'}
                 hideTitle={true}
                 imgTopic={images.topic4}
-                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Vật Dụng')}
+                onPressSubmit={()=>this._onPressSubmit('stationaries')}
               />
             </View>
             <View style={theme.topic.blockTopic}>
@@ -52,13 +52,13 @@ export default class Topics extends Component {
                 title={'Động Vật'}
                 hideTitle={true}
                 imgTopic={images.topic5}
-                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Động Vật')}
+                onPressSubmit={()=>this._onPressSubmit('animals')}
               />
               <TopicBlock
                 title={'Nghề Nghiệp'}
                 hideTitle={true}
                 imgTopic={images.topic6}
-                onPressSubmit={()=>this._onPressSubmit('Chủ Đề Nghề Nghiệp')}
+                onPressSubmit={()=>this._onPressSubmit('jobs')}
               />
             </View>
           </View>

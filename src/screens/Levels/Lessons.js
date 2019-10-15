@@ -62,8 +62,8 @@ export default class Lessons extends Component {
               <Text style={theme.lesson.vocabulary}>
                 {filteredData ? filteredData[questionIndex].answer : ''}
               </Text>
-              <Text style={theme.lesson.vocabulary}>
-                {filteredData ? filteredData[questionIndex].answer : ''}
+              <Text style={theme.lesson.vietnamese}>
+                {filteredData ? filteredData[questionIndex].vietnamese : ''}
               </Text>
             </View>
             <View style={theme.lesson.btnView}>

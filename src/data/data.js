@@ -17,6 +17,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Apple', 'Orange', 'Pearl', 'Mango'],
     answer: 'Apple',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -26,6 +27,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Apple', 'Lemon', 'Banana', 'Orange'],
     answer: 'Banana',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -35,6 +37,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Grape', 'Lemon', 'Banana', 'Orange'],
     answer: 'Orange',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -44,6 +47,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Apple', 'Lemon', 'Watermelon', 'Orange'],
     answer: 'Watermelon',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -53,6 +57,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Grape', 'Lemon', 'Orange', 'Kiwi Fruit'],
     answer: 'Grape',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -62,6 +67,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Apple', 'Mango', 'Watermelon', 'Orange'],
     answer: 'Mango',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -71,6 +77,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Strawberry', 'Apple', 'Lemon', 'Orange'],
     answer: 'Strawberry',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -80,6 +87,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Apple', 'Pineapple', 'Kiwi Fruit', 'Orange'],
     answer: 'Pineapple',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -89,6 +97,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Apple', 'Peach', 'Kiwi Fruit', 'Grape'],
     answer: 'Kiwi Fruit',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -98,6 +107,7 @@ export const DATA = [
     question: 'Guess the names of these fruits',
     questions: ['Kiwi Fruit', 'Orange', 'Banana', 'Peach'],
     answer: 'Peach',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -107,6 +117,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Police', 'Teacher', 'Doctor', 'Vet'],
     answer: 'Teacher',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -116,6 +127,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Police', 'Fire fighter', 'Doctor', 'Actor'],
     answer: 'Police',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -125,6 +137,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Doctor', 'Teacher', 'Fire fighter', 'Vet'],
     answer: 'Fire fighter',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -134,6 +147,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Vet', 'Teacher', 'Doctor', 'Police'],
     answer: 'Doctor',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -143,6 +157,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Vet', 'Doctor', 'Teacher', 'Nurse'],
     answer: 'Nurse',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -152,6 +167,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Nurse', 'Police', 'Vet', 'Fire fighter'],
     answer: 'Vet',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -161,6 +177,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Farmer', 'Teacher', 'Engineer', 'Police'],
     answer: 'Farmer',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -170,6 +187,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Vet', 'Engineer', 'Police', 'Nurse'],
     answer: 'Engineer',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -179,6 +197,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Doctor', 'Vet', 'Nurse', 'Plumber'],
     answer: 'Plumber',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'fruits',
@@ -188,6 +207,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Singer', 'Plumber', 'Doctor', 'Actor'],
     answer: 'Actor',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -197,6 +217,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Red', 'Orange', 'Yellow', 'Blue'],
     answer: 'Red',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -206,6 +227,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Yellow', 'Red', 'Green', 'Orange'],
     answer: 'Yellow',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -215,6 +237,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Green', 'Blue', 'Red', 'Orange'],
     answer: 'Blue',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -224,6 +247,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Red', 'Yellow', 'Green', 'Blue'],
     answer: 'Green',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -233,6 +257,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Brown', 'Yellow', 'Orange', 'Pink'],
     answer: 'Pink',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -242,6 +267,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Yellow', 'Purple', 'Red', 'Orange'],
     answer: 'Purple',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -251,6 +277,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Blue', 'Green', 'Pink', 'Orange'],
     answer: 'Orange',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -260,6 +287,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Blue', 'Yellow', 'Brown', 'Orange'],
     answer: 'Brown',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -269,6 +297,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['White', 'Black', 'Red', 'Yellow'],
     answer: 'Black',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'colors',
@@ -278,6 +307,7 @@ export const DATA = [
     question: 'Guess the names of these colors',
     questions: ['Pink', 'Orange', 'White', 'Blue'],
     answer: 'White',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -287,6 +317,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Cat', 'Dog', 'Rabbit', 'Fish'],
     answer: 'Cat',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -296,6 +327,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Cat', 'Dog', 'Mouse', 'Bird'],
     answer: 'Mouse',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -305,6 +337,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Cat', 'Pig', 'Dog', 'Chiken'],
     answer: 'Pig',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -314,6 +347,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Mouse', 'Cat', 'Dog', 'Chicken'],
     answer: 'Dog',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -323,6 +357,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Sheep', 'Duck', 'Rabbit', 'Dog'],
     answer: 'Duck',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -332,6 +367,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Sheep', 'Bird', 'Cow', 'Mouse'],
     answer: 'Sheep',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -341,6 +377,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Bird', 'Mouse', 'Horse', 'Chicken'],
     answer: 'Chicken',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -350,6 +387,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Mouse', 'Snake', 'Horse', 'Chicken'],
     answer: 'Horse',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -359,6 +397,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Horse', 'Cat', 'Turtle', 'Fish'],
     answer: 'turtle',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'animals',
@@ -368,6 +407,7 @@ export const DATA = [
     question: 'Guess the names of these animals',
     questions: ['Turtle', 'Bird', 'Duck', 'Fish'],
     answer: 'Fish',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -377,6 +417,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Meat', 'Ice Cream', 'Chicken', 'Hamburger'],
     answer: 'Ice Cream',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -386,6 +427,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Fish', 'Hamburger', 'Cheese', 'Butter'],
     answer: 'Hamburger',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -395,6 +437,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Hamburger', 'Pork', 'Beef', 'Sandwich'],
     answer: 'Sandwich',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -404,6 +447,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Cheese', 'French fries', 'Beef', 'Chicken'],
     answer: 'French fries',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -413,6 +457,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Butter', 'Cheese', 'Hot dog', 'Beef'],
     answer: 'Butter',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -422,6 +467,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Butter', 'Cheese', 'Pork', 'Chicken'],
     answer: 'Cheese',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -431,6 +477,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Noodle', 'Pizza', 'Spaghetti', 'Beef'],
     answer: 'Spaghetti',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -440,6 +487,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Noodle', 'Pizza', 'Rice', 'Chicken'],
     answer: 'Rice',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -449,6 +497,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Rice', 'Beef', 'Noodle', 'Fish'],
     answer: 'Noodle',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'foods',
@@ -458,6 +507,7 @@ export const DATA = [
     question: 'Guess the names of these foods',
     questions: ['Pork', 'Fish', 'Sandwich', 'Butter'],
     answer: 'Pork',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -467,6 +517,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Chalk', 'Pen', 'Board', 'Eraser'],
     answer: 'Board',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -476,6 +527,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Pen', 'Calculator', 'Backpack', 'Eraser'],
     answer: 'Calculator',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -485,6 +537,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Eraser', 'Pen', 'Backpack', 'Board'],
     answer: 'Pen',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -494,6 +547,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Pen', 'Backpack', 'Chalk', 'Eraser'],
     answer: 'Chalk',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -503,6 +557,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Pen', 'Crayon', 'Pencil', 'Backpack'],
     answer: 'Crayon',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -512,6 +567,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Pen', 'Backpack', 'Ruler', 'Chalk'],
     answer: 'Ruler',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -521,6 +577,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Ruler', 'Glue', 'Eraser', 'Pen'],
     answer: 'Eraser',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -530,6 +587,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Glue', 'Eraser', 'Backpack', 'Ruler'],
     answer: 'Backpack',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -539,6 +597,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Pen', 'Pencil', 'Glue', 'Ruler'],
     answer: 'Glue',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'stationaries',
@@ -548,6 +607,7 @@ export const DATA = [
     question: 'Guess the names of these stationaries',
     questions: ['Calculator', 'Paper', 'Chalk', 'Eraser'],
     answer: 'Paper',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -557,6 +617,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Police', 'Teacher', 'Doctor', 'Vet'],
     answer: 'Teacher',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -566,6 +627,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Police', 'Fire fighter', 'Doctor', 'Actor'],
     answer: 'Police',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -575,6 +637,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Doctor', 'Teacher', 'Fire fighter', 'Vet'],
     answer: 'Fire fighter',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -584,6 +647,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Vet', 'Teacher', 'Doctor', 'Police'],
     answer: 'Doctor',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -593,6 +657,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Vet', 'Doctor', 'Teacher', 'Nurse'],
     answer: 'Nurse',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -602,6 +667,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Nurse', 'Police', 'Vet', 'Fire fighter'],
     answer: 'Vet',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -611,6 +677,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Farmer', 'Teacher', 'Engineer', 'Police'],
     answer: 'Farmer',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -620,6 +687,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Vet', 'Engineer', 'Police', 'Nurse'],
     answer: 'Engineer',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -629,6 +697,7 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Doctor', 'Vet', 'Nurse', 'Plumber'],
     answer: 'Plumber',
+    vietnamese: 'Nghĩa tiếng việt',
   },
   {
     topic: 'jobs',
@@ -638,5 +707,6 @@ export const DATA = [
     question: 'Guess the names of these jobs',
     questions: ['Singer', 'Plumber', 'Doctor', 'Actor'],
     answer: 'Actor',
+    vietnamese: 'Nghĩa tiếng việt',
   },
 ];

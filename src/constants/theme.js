@@ -126,7 +126,12 @@ const lesson = StyleSheet.create({
     fontSize: 23,
     color: '#ff4800',
     fontWeight: 'bold',
-    marginBottom: 30,
+  },
+  vietnamese: {
+    fontSize: 12,
+    color: '#000',
+    fontWeight: 'bold',
+    marginBottom: 40,
   },
   btnView: {
     flexDirection: 'row',

@@ -41,8 +41,6 @@ export default class Levels extends Component {
       {level: 4, score: 0},
       {level: 5, score: 0},
       {level: 6, score: 0},
-      {level: 7, score: 0},
-      {level: 8, score: 0},
     ];
     return (
       <SafeAreaView style={{flex: 1}}>

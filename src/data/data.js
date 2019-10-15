@@ -1,11 +1,11 @@
 export const images = {
   star: require('../assets/images/star.png'),
-  topic1: require('../assets/images/apple.png'),
-  topic2: require('../assets/images/apple.png'),
-  topic3: require('../assets/images/apple.png'),
-  topic4: require('../assets/images/apple.png'),
-  topic5: require('../assets/images/apple.png'),
-  topic6: require('../assets/images/apple.png'),
+  topic1: require('../assets/images/fruits_icon.png'),
+  topic2: require('../assets/images/colors_icon.png'),
+  topic3: require('../assets/images/foods_icon.png'),
+  topic4: require('../assets/images/stationaries_icon.png'),
+  topic5: require('../assets/images/animals_icon.png'),
+  topic6: require('../assets/images/jobs_icon.png'),
 };
 
 export const DATA = [

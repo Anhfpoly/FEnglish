@@ -25,6 +25,9 @@ export default class TopicBlock extends Component {
               height: '100%',
               alignItems: 'center',
               justifyContent: 'center',
+              borderColor: '#FFE500',
+              borderWidth: 2,
+              borderRadius: 100,
             },
             this.props.type === 'questions' && {opacity: this.state.opacity},
           ]}>

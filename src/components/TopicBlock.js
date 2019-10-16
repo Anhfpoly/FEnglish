@@ -3,16 +3,13 @@ import {Text, View, ImageBackground, TouchableOpacity} from 'react-native';
 import theme from '../constants/theme';
 
 export default class TopicBlock extends Component {
-  state = {
-    opacity: 0.2,
-  };
-  componentDidMount() {
-    if (this.props.scores > 0) {
-      this.setState({opacity: 1});
-    }
-  }
-
   render() {
+    const {topicData, defaultTopicData,topic} = this.props;
+    let topicFiltered = []
+    
+    if(topicData) {   
+      topicFiltered = topicData.filter(item => item.levels === defaultTopicData.level && topic === item.topics)
+    }
     return (
       <TouchableOpacity
         style={theme.topic.viewTopic}
@@ -29,16 +26,16 @@ export default class TopicBlock extends Component {
               borderWidth: 2,
               borderRadius: 100,
             },
-            this.props.type === 'questions' && {opacity: this.state.opacity},
+            this.props.type === 'questions' && {opacity: topicFiltered.length > 0 ? topicFiltered[0].point > 0 && 1 : 0.2},
           ]}>
           {this.props.hideTitle ? null : (
-            <Text style={theme.topic.scores}>{this.props.scores + '/10đ'}</Text>
+            <Text style={theme.topic.scores}>{topicFiltered.length > 0 ? topicFiltered[0].point + '/10đ' : '0/10đ'}</Text>
           )}
         </ImageBackground>
         <Text
           style={[
             theme.topic.title,
-            this.props.type === 'questions' && {opacity: this.state.opacity},
+            this.props.type === 'questions' && {opacity: topicFiltered.length > 0 ? topicFiltered[0].point > 0 && 1 : 0.2},
           ]}>
           {this.props.title}
         </Text>

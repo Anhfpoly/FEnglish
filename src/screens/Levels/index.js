@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {Text, View, SafeAreaView, ScrollView} from 'react-native';
 import {TextInput, Button, Header, TopicBlock} from '../../components';
 import theme from '../../constants/theme';
-import {images} from '../../data/data';
+import {images, DATA} from '../../data/data';
 import { getData } from '../../utils/misc';
-
+import AsyncStorage from '@react-native-community/async-storage';
 export default class Levels extends Component {
   static navigationOptions = {header: null};
   state = {
@@ -24,16 +24,22 @@ export default class Levels extends Component {
   }
   _getPoints = async () => {
     let response = await getData('points');
-    let pointsData = JSON.parse(response);
-    console.log(pointsData)
-    this.setState({pointsData})
+    if(response) {
+      let pointsData = JSON.parse(response);
+      this.setState({pointsData})
+    }
   }
   _onPressLevel = (value, value2) => {
-    this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
+    let topicFiltered = DATA.filter(item => item.level === 'lv' + value && item.topic === value2);
+    if(topicFiltered.length > 0) {
+      this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
+    }else {
+      alert('Dữ liệu cấp độ này chưa được cập nhật')
+    }
+    
   };
   render() {
     const {topics} = this.props.navigation.state.params;
-    const {scores} = this.state;
     const levels = [
       {level: 1, score: 8},
       {level: 2, score: 0},
@@ -61,6 +67,9 @@ export default class Levels extends Component {
                   imgTopic={images.star}
                   type='questions'
                   scores={item.score}
+                  topic={topics}
+                  defaultTopicData={levels[index]}
+                  topicData={this.state.pointsData}
                   onPressSubmit={()=>this._onPressLevel(item.level, topics)}
                 />
               ))}

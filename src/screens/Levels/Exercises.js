@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, SafeAreaView, Image} from 'react-native';
+import {Text, View, SafeAreaView, Image,BackHandler} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {Header} from '../../components';
 import theme from '../../constants/theme';
@@ -9,8 +9,10 @@ import {Button, Answer} from '../../components';
 import Tts from 'react-native-tts';
 import {shuffle} from '../../utils/misc';
 Tts.setDefaultLanguage('en-IE');
+
 export default class Exercises extends Component {
   static navigationOptions = {header: null};
+  
   state = {
     scores: 10,
     isStartLesson: false,
@@ -21,7 +23,7 @@ export default class Exercises extends Component {
     newFiltered: null,
     curPoint: 0,
   };
-
+  
   _onPressNext = () => {
     if (this.state.isSelected) {
       const {levels, topics, filteredData} = this.props.navigation.state.params;
@@ -67,7 +69,15 @@ export default class Exercises extends Component {
 
   componentDidMount() {
     this._shuffleQuestion();
+    BackHandler.addEventListener("hardwareBackPress", this.onBackPress);
   }
+  componentWillUnmount() {
+    BackHandler.removeEventListener("hardwareBackPress", this.onBackPress);
+  }
+  onBackPress = () => {
+    this.props.navigation.navigate('TopicsStack')
+    return true;
+  };
   _shuffleQuestion = () => {
     const {filteredData} = this.props.navigation.state.params;
     const {questionIndex} = this.state;

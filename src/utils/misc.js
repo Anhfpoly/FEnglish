@@ -16,16 +16,19 @@ export const shuffle = function(array) {
 export const storeData = async (key, value) => {
   try {
     let oldData = await getData();
-    if (oldData) {
-        let parseObj = JSON.parse(oldData)
-        console.log(parseObj)
-        console.log(value)
-    //   await AsyncStorage.setItem(key, [...oldData, value]);
-    } else {
-      await AsyncStorage.setItem(key, value);
-    }
+    // console.log(value);
+    // console.log(oldData)
+    // if (oldData) {
+    //     let parseObj = JSON.parse(oldData)
+    //     console.log(parseObj)
+    //     // console.log(value)
+    // //   await AsyncStorage.setItem(key, [...oldData, value]);
+    // } else {
+    //   await AsyncStorage.setItem(key, value);
+    // }
   } catch (e) {
     // saving error
+    console.log(e);
   }
 };
 

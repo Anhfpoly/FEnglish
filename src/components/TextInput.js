@@ -14,8 +14,6 @@ export default class TextInputComponent extends Component {
           style={styles.textInput}
           value={this.props.value}
           placeholderTextColor="#910084"
-          fontFamily={fonts.alina}
-          fontSize={30}
           onChangeText={value => this.props.onChangeText(value)}
         />
       </View>
@@ -31,11 +29,13 @@ const styles = StyleSheet.create({
   },
   textInput: {
     backgroundColor: colors.lightGray,
-    padding: 7,
     marginHorizontal: 60,
     fontFamily: fonts.alina,
     width: 200,
+    height: 50,
+    fontSize: 20,
     borderRadius: 10,
-    color: '#910084',
+    paddingLeft: 6,
+    color: '#910084'
   },
 });

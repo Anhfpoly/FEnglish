@@ -1,62 +1,66 @@
 import React, {Component} from 'react';
 import {Text, View, SafeAreaView, ScrollView} from 'react-native';
 import {TextInput, Button, Header, TopicBlock} from '../../components';
+import LinearGradient from 'react-native-linear-gradient';
 import theme from '../../constants/theme';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AsyncStorage from '@react-native-community/async-storage';
-import { getData } from '../../utils/misc';
+import {getData} from '../../utils/misc';
 
 export default class Result extends Component {
   static navigationOptions = {header: null};
 
   componentDidMount() {
     const {point, levels, topics} = this.props.navigation.state.params;
-    let data = {point: point, levels: levels, topics: topics}
-    this._savePoints(data)
+    let data = {point: point, levels: levels, topics: topics};
+    this._savePoints(data);
   }
-  _savePoints = async (data) => {
+  _savePoints = async data => {
     try {
       let oldData = await getData('points');
-      if(oldData) {
+      if (oldData) {
         oldData = JSON.parse(oldData);
         let dataIndex = oldData.findIndex(item => item.levels === data.levels);
-        if(dataIndex !== -1 && oldData[dataIndex].point < data.point) {
+        if (dataIndex !== -1 && oldData[dataIndex].point < data.point) {
           oldData[dataIndex] = data;
           await AsyncStorage.setItem('points', JSON.stringify(oldData));
-        } else if(dataIndex === -1){
+        } else if (dataIndex === -1) {
           oldData.push(data);
           await AsyncStorage.setItem('points', JSON.stringify(oldData));
         }
       } else {
         let resultData = [];
         resultData.push(data);
-        await AsyncStorage.setItem('points', JSON.stringify(resultData)); 
+        await AsyncStorage.setItem('points', JSON.stringify(resultData));
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  } 
+  };
   _onPressHome = () => {
     this.props.navigation.navigate('Topics');
   };
   render() {
     const {point} = this.props.navigation.state.params;
     return (
-      <SafeAreaView style={{flex: 1}}>
-        <Header title={'Kết Quả'} />
-        <View style={{flex: 1}}>
-          <View style={theme.result.container}>
-          <Text>{point}</Text>
-          <Entypo name={'medal'}  size={120} color={'#FF9800'}/>
+      <LinearGradient
+        start={{x: 0.0, y: 0.25}}
+        end={{x: 0.5, y: 1.0}}
+        colors={['#550031', '#760056', '#910084', '#a01fbd', '#9c44fe']}
+        style={theme.result.linearGradient}>
+        <View style={theme.result.container}>
+          <Text style={theme.result.title}>HOÀN THÀNH BÀI TẬP</Text>
+          <Text style={theme.result.username}>Điểm số của bé HOA là:</Text>
+          <Text style={theme.result.point}>{point} Điểm</Text>
+          <Entypo name={'medal'} size={120} color={'#FF9800'} />
           <Button
-              btnValue={'Về trang chủ'}
-              name={'home'}
-              onPressSubmit={() => this._onPressHome()}
-              colorButton={'#FF6F91'}
-            />
-          </View>
+            btnValue={'Về trang chủ'}
+            name={'home'}
+            onPressSubmit={() => this._onPressHome()}
+            colorButton={'#FF6F91'}
+          />
         </View>
-      </SafeAreaView>
+      </LinearGradient>
     );
   }
 }

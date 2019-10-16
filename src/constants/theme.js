@@ -31,7 +31,6 @@ const welcome = StyleSheet.create({
     flex: 1,
     paddingLeft: 15,
     paddingRight: 15,
-    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -184,11 +183,32 @@ const exercise = StyleSheet.create({
   },
 });
 const result = StyleSheet.create({
-  container: {
+  linearGradient: {
     flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 28,
+    color: '#fff',
+    marginVertical: 20,
+  },
+  username: {
+    color: '#fff',
+    fontSize: 18,
+    marginBottom: 20,
+  },
+  point: {
+    color: '#fff',
+    fontSize: 28,
+    marginBottom: 10,
+  }
 });
 const theme = {
   welcome,

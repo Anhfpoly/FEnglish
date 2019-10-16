@@ -205,7 +205,7 @@ export default class Exercises extends Component {
               Bé đã hoàn thành bài học thật xuất sắc!
             </Text>
             <Text style={theme.welcome.flogo2}>
-              Hãy thử làm những bài tập sau đây để xem bé ghi nhớ được những gì
+              Hãy thử làm những bài tập này để xem bé ghi nhớ được những gì
               nha!
             </Text>
             <Button

@@ -10,7 +10,7 @@ export const images = {
 
 export const DATA = [
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 1,
     imgurl: require('../assets/images/apple.png'),
@@ -20,7 +20,7 @@ export const DATA = [
     vietnamese: 'Trái táo',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 2,
     imgurl: require('../assets/images/banana.png'),
@@ -30,7 +30,7 @@ export const DATA = [
     vietnamese: 'Trái chuối',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 3,
     imgurl: require('../assets/images/orange.png'),
@@ -40,7 +40,7 @@ export const DATA = [
     vietnamese: 'Trái cam',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 4,
     imgurl: require('../assets/images/watermelon.png'),
@@ -50,7 +50,7 @@ export const DATA = [
     vietnamese: 'Trái dưa hấu',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 5,
     imgurl: require('../assets/images/grape.png'),
@@ -60,7 +60,7 @@ export const DATA = [
     vietnamese: 'Trái nho',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 6,
     imgurl: require('../assets/images/mango.png'),
@@ -70,7 +70,7 @@ export const DATA = [
     vietnamese: 'Trái xoài',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 7,
     imgurl: require('../assets/images/strawberry.png'),
@@ -80,7 +80,7 @@ export const DATA = [
     vietnamese: 'Trái dâu',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 8,
     imgurl: require('../assets/images/pineapple.png'),
@@ -90,7 +90,7 @@ export const DATA = [
     vietnamese: 'Trái dứa',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 9,
     imgurl: require('../assets/images/kiwi.png'),
@@ -100,7 +100,7 @@ export const DATA = [
     vietnamese: 'Trái Kiwi',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv1',
     number: 10,
     imgurl: require('../assets/images/peach.png'),
@@ -110,7 +110,7 @@ export const DATA = [
     vietnamese: 'Trái đào',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 1,
     imgurl: require('../assets/images/teacher.png'),
@@ -120,7 +120,7 @@ export const DATA = [
     vietnamese: 'Giáo viên',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 2,
     imgurl: require('../assets/images/police.png'),
@@ -130,7 +130,7 @@ export const DATA = [
     vietnamese: 'Cảnh sát',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 3,
     imgurl: require('../assets/images/fire_fighter.png'),
@@ -140,7 +140,7 @@ export const DATA = [
     vietnamese: 'Lính cứu hoả',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 4,
     imgurl: require('../assets/images/doctor.png'),
@@ -150,7 +150,7 @@ export const DATA = [
     vietnamese: 'Bác sĩ',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 5,
     imgurl: require('../assets/images/nurse.png'),
@@ -160,7 +160,7 @@ export const DATA = [
     vietnamese: 'Y tá',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 6,
     imgurl: require('../assets/images/vet.png'),
@@ -170,7 +170,7 @@ export const DATA = [
     vietnamese: 'Bác sĩ thú y',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 7,
     imgurl: require('../assets/images/farmer.png'),
@@ -180,7 +180,7 @@ export const DATA = [
     vietnamese: 'Nông dân',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 8,
     imgurl: require('../assets/images/engineer.png'),
@@ -190,7 +190,7 @@ export const DATA = [
     vietnamese: 'Kỹ sư',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 9,
     imgurl: require('../assets/images/plumber.png'),
@@ -200,7 +200,7 @@ export const DATA = [
     vietnamese: 'Thợ sửa ống nước',
   },
   {
-    topic: 'fruits',
+    topic: 'Fruits',
     level: 'lv2',
     number: 10,
     imgurl: require('../assets/images/actor.png'),
@@ -210,7 +210,7 @@ export const DATA = [
     vietnamese: 'Diễn viên',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 1,
     imgurl: require('../assets/images/red.png'),
@@ -220,7 +220,7 @@ export const DATA = [
     vietnamese: 'Màu đỏ',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 2,
     imgurl: require('../assets/images/yellow.png'),
@@ -230,7 +230,7 @@ export const DATA = [
     vietnamese: 'Màu vàng',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 3,
     imgurl: require('../assets/images/blue.png'),
@@ -240,7 +240,7 @@ export const DATA = [
     vietnamese: 'Màu xanh dương',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 4,
     imgurl: require('../assets/images/green.png'),
@@ -250,7 +250,7 @@ export const DATA = [
     vietnamese: 'Màu xanh lá cây',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 5,
     imgurl: require('../assets/images/pink.png'),
@@ -260,7 +260,7 @@ export const DATA = [
     vietnamese: 'Màu hồng',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 6,
     imgurl: require('../assets/images/purple.png'),
@@ -270,7 +270,7 @@ export const DATA = [
     vietnamese: 'Màu tím',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 7,
     imgurl: require('../assets/images/orange.png'),
@@ -280,7 +280,7 @@ export const DATA = [
     vietnamese: 'Màu cam',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 8,
     imgurl: require('../assets/images/brown.png'),
@@ -290,7 +290,7 @@ export const DATA = [
     vietnamese: 'Màu nâu',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 9,
     imgurl: require('../assets/images/black.png'),
@@ -300,7 +300,7 @@ export const DATA = [
     vietnamese: 'Màu đen',
   },
   {
-    topic: 'colors',
+    topic: 'Colors',
     level: 'lv1',
     number: 10,
     imgurl: require('../assets/images/white.png'),
@@ -310,7 +310,7 @@ export const DATA = [
     vietnamese: 'Màu trắng',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 1,
     imgurl: require('../assets/images/cat.png'),
@@ -320,7 +320,7 @@ export const DATA = [
     vietnamese: 'Con mèo',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 2,
     imgurl: require('../assets/images/mouse.png'),
@@ -330,7 +330,7 @@ export const DATA = [
     vietnamese: 'Con chuột',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 3,
     imgurl: require('../assets/images/pig.png'),
@@ -340,7 +340,7 @@ export const DATA = [
     vietnamese: 'Con heo',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 4,
     imgurl: require('../assets/images/dog.png'),
@@ -350,7 +350,7 @@ export const DATA = [
     vietnamese: 'Con chó',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 5,
     imgurl: require('../assets/images/duck.png'),
@@ -360,7 +360,7 @@ export const DATA = [
     vietnamese: 'Con vịt',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 6,
     imgurl: require('../assets/images/sheep.png'),
@@ -370,7 +370,7 @@ export const DATA = [
     vietnamese: 'Con cừu',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 7,
     imgurl: require('../assets/images/chicken.png'),
@@ -380,7 +380,7 @@ export const DATA = [
     vietnamese: 'Con gà',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 8,
     imgurl: require('../assets/images/horse.png'),
@@ -390,7 +390,7 @@ export const DATA = [
     vietnamese: 'Con ngựa',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 9,
     imgurl: require('../assets/images/turtle.png'),
@@ -400,7 +400,7 @@ export const DATA = [
     vietnamese: 'Con rùa',
   },
   {
-    topic: 'animals',
+    topic: 'Animals',
     level: 'lv1',
     number: 10,
     imgurl: require('../assets/images/fish.png'),
@@ -410,7 +410,7 @@ export const DATA = [
     vietnamese: 'Con cá',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 1,
     imgurl: require('../assets/images/ice_cream.png'),
@@ -420,7 +420,7 @@ export const DATA = [
     vietnamese: 'Cây kem',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 2,
     imgurl: require('../assets/images/hamburger.png'),
@@ -430,7 +430,7 @@ export const DATA = [
     vietnamese: 'Bánh mì hăm bơ gơ',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 3,
     imgurl: require('../assets/images/sandwich.png'),
@@ -440,7 +440,7 @@ export const DATA = [
     vietnamese: 'Bánh mì kẹp thịt',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 4,
     imgurl: require('../assets/images/french_fries.png'),
@@ -450,7 +450,7 @@ export const DATA = [
     vietnamese: 'Khoai tây chiên',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 5,
     imgurl: require('../assets/images/butter.png'),
@@ -460,7 +460,7 @@ export const DATA = [
     vietnamese: 'Bơ',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 6,
     imgurl: require('../assets/images/cheese.png'),
@@ -470,7 +470,7 @@ export const DATA = [
     vietnamese: 'Phô mai',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 7,
     imgurl: require('../assets/images/spaghetti.png'),
@@ -480,7 +480,7 @@ export const DATA = [
     vietnamese: 'Mỳ Ý',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 8,
     imgurl: require('../assets/images/rice.png'),
@@ -490,7 +490,7 @@ export const DATA = [
     vietnamese: 'Gạo/cơm',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 9,
     imgurl: require('../assets/images/noodle.png'),
@@ -500,7 +500,7 @@ export const DATA = [
     vietnamese: 'Mì',
   },
   {
-    topic: 'foods',
+    topic: 'Foods',
     level: 'lv1',
     number: 10,
     imgurl: require('../assets/images/pork.png'),
@@ -510,7 +510,7 @@ export const DATA = [
     vietnamese: 'Thịt heo',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 1,
     imgurl: require('../assets/images/board.png'),
@@ -520,7 +520,7 @@ export const DATA = [
     vietnamese: 'Cái bảng',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 2,
     imgurl: require('../assets/images/calculator.png'),
@@ -530,7 +530,7 @@ export const DATA = [
     vietnamese: 'Máy tính',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 3,
     imgurl: require('../assets/images/pen.png'),
@@ -540,7 +540,7 @@ export const DATA = [
     vietnamese: 'Cây bút',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 4,
     imgurl: require('../assets/images/chalk.png'),
@@ -550,7 +550,7 @@ export const DATA = [
     vietnamese: 'Phấn',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 5,
     imgurl: require('../assets/images/crayon.png'),
@@ -560,7 +560,7 @@ export const DATA = [
     vietnamese: 'Bút màu',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 6,
     imgurl: require('../assets/images/ruler.png'),
@@ -570,7 +570,7 @@ export const DATA = [
     vietnamese: 'Cây thước',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 7,
     imgurl: require('../assets/images/eraser.png'),
@@ -580,7 +580,7 @@ export const DATA = [
     vietnamese: 'Cục tẩy',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 8,
     imgurl: require('../assets/images/backpack.png'),
@@ -590,7 +590,7 @@ export const DATA = [
     vietnamese: 'Cặp xách',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 9,
     imgurl: require('../assets/images/glue.png'),
@@ -600,7 +600,7 @@ export const DATA = [
     vietnamese: 'Keo/hồ',
   },
   {
-    topic: 'stationaries',
+    topic: 'Stationaries',
     level: 'lv1',
     number: 10,
     imgurl: require('../assets/images/paper.png'),
@@ -610,7 +610,7 @@ export const DATA = [
     vietnamese: 'Tờ giấy',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 1,
     imgurl: require('../assets/images/teacher.png'),
@@ -620,7 +620,7 @@ export const DATA = [
     vietnamese: 'Giáo viên',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 2,
     imgurl: require('../assets/images/police.png'),
@@ -630,7 +630,7 @@ export const DATA = [
     vietnamese: 'Cảnh sát',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 3,
     imgurl: require('../assets/images/fire_fighter.png'),
@@ -640,7 +640,7 @@ export const DATA = [
     vietnamese: 'Lính cứu hoả',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 4,
     imgurl: require('../assets/images/doctor.png'),
@@ -650,7 +650,7 @@ export const DATA = [
     vietnamese: 'Bác sĩ',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 5,
     imgurl: require('../assets/images/nurse.png'),
@@ -660,7 +660,7 @@ export const DATA = [
     vietnamese: 'Y tá',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 6,
     imgurl: require('../assets/images/vet.png'),
@@ -670,7 +670,7 @@ export const DATA = [
     vietnamese: 'Bác sĩ thú y',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 7,
     imgurl: require('../assets/images/farmer.png'),
@@ -680,7 +680,7 @@ export const DATA = [
     vietnamese: 'Nông dân',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 8,
     imgurl: require('../assets/images/engineer.png'),
@@ -690,7 +690,7 @@ export const DATA = [
     vietnamese: 'Kỹ sư',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 9,
     imgurl: require('../assets/images/plumber.png'),
@@ -700,7 +700,7 @@ export const DATA = [
     vietnamese: 'Thợ sửa ống nước',
   },
   {
-    topic: 'jobs',
+    topic: 'Jobs',
     level: 'lv1',
     number: 10,
     imgurl: require('../assets/images/actor.png'),

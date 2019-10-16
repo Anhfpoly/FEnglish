@@ -26,7 +26,7 @@ export default class TopicBlock extends Component {
               borderWidth: 2,
               borderRadius: 100,
             },
-            this.props.type === 'questions' && {opacity: topicFiltered.length > 0 ? topicFiltered[0].point > 0 && 1 : 0.2},
+            this.props.type === 'questions' && {opacity: topicFiltered.length > 0 ? topicFiltered[0].point > 0 ? 1 : 0.2 : 0.2},
           ]}>
           {this.props.hideTitle ? null : (
             <Text style={theme.topic.scores}>{topicFiltered.length > 0 ? topicFiltered[0].point + '/10đ' : '0/10đ'}</Text>
@@ -35,7 +35,7 @@ export default class TopicBlock extends Component {
         <Text
           style={[
             theme.topic.title,
-            this.props.type === 'questions' && {opacity: topicFiltered.length > 0 ? topicFiltered[0].point > 0 && 1 : 0.2},
+            this.props.type === 'questions' && {opacity: topicFiltered.length > 0 ? topicFiltered[0].point > 0 ? 1  : 0.2 : 0.2},
           ]}>
           {this.props.title}
         </Text>

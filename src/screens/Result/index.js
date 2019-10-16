@@ -20,10 +20,10 @@ export default class Result extends Component {
       if(oldData) {
         oldData = JSON.parse(oldData);
         let dataIndex = oldData.findIndex(item => item.levels === data.levels);
-        if(dataIndex !== -1) {
+        if(dataIndex !== -1 && oldData[dataIndex].point < data.point) {
           oldData[dataIndex] = data;
           await AsyncStorage.setItem('points', JSON.stringify(oldData));
-        } else {
+        } else if(dataIndex === -1){
           oldData.push(data);
           await AsyncStorage.setItem('points', JSON.stringify(oldData));
         }

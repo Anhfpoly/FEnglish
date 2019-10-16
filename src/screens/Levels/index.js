@@ -4,7 +4,7 @@ import {TextInput, Button, Header, TopicBlock} from '../../components';
 import theme from '../../constants/theme';
 import {images, DATA} from '../../data/data';
 import { getData } from '../../utils/misc';
-import AsyncStorage from '@react-native-community/async-storage';
+
 export default class Levels extends Component {
   static navigationOptions = {header: null};
   state = {
@@ -31,12 +31,25 @@ export default class Levels extends Component {
   }
   _onPressLevel = (value, value2) => {
     let topicFiltered = DATA.filter(item => item.level === 'lv' + value && item.topic === value2);
-    if(topicFiltered.length > 0) {
-      this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
+    if(this.state.pointsData) {
+      let result = this.state.pointsData.map(({ levels }) => levels)
+      var maxLevels = Math.max.apply(Math, result);
+      if(value <= maxLevels + 1) {
+        if(topicFiltered.length > 0) {
+          this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
+        }else {
+          alert('Dữ liệu cấp độ này chưa được cập nhật')
+        }
+      }else {
+        alert('Hãy hoàn thành cấp độ trước đó')
+      }
     }else {
-      alert('Dữ liệu cấp độ này chưa được cập nhật')
+      if(value === 1) {
+        this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
+      }else {
+        alert('Hãy hoàn thành cấp độ trước đó')
+      }
     }
-    
   };
   render() {
     const {topics} = this.props.navigation.state.params;

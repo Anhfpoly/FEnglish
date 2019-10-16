@@ -9,12 +9,26 @@ import {getData} from '../../utils/misc';
 
 export default class Result extends Component {
   static navigationOptions = {header: null};
+  state = {
+    userName: '',
+  };
 
   componentDidMount() {
     const {point, levels, topics} = this.props.navigation.state.params;
     let data = {point: point, levels: levels, topics: topics};
     this._savePoints(data);
+    this._getUserName();
   }
+  _getUserName = async () => {
+    try {
+      const value = await AsyncStorage.getItem('username');
+      if (value !== null) {
+        this.setState({userName: value});
+      }
+    } catch (error) {
+    }
+  };
+  
   _savePoints = async data => {
     try {
       let oldData = await getData('points');
@@ -50,7 +64,7 @@ export default class Result extends Component {
         style={theme.result.linearGradient}>
         <View style={theme.result.container}>
           <Text style={theme.result.title}>HOÀN THÀNH BÀI TẬP</Text>
-          <Text style={theme.result.username}>Điểm số của bé HOA là:</Text>
+          <Text style={theme.result.username}>Điểm số của bé {this.state.userName} là:</Text>
           <Text style={theme.result.point}>{point} Điểm</Text>
           <Entypo name={'medal'} size={120} color={'#FF9800'} />
           <Button

@@ -3,16 +3,26 @@ import {Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import theme from '../constants/theme';
 import {TextInput, Button} from '../components/';
-
+import AsyncStorage from '@react-native-community/async-storage';
 export default class Welcome extends Component {
   state = {
     nameValue: '',
+    isUserName: true,
+    buttonColor: '#9d9d9d'
   };
   _onChangeText = value => {
-    this.setState({nameValue: value});
+    this.setState({nameValue: value, isUserName: false, buttonColor: '#FF6F91'});
   };
   _onPressSubmit = () => {
     this.props.navigation.navigate('Topics', {name: this.state.nameValue});
+    this._saveUserName(this.state.nameValue);
+  };
+  _saveUserName = async data => {
+    try {
+      await AsyncStorage.setItem('username', data);
+    } catch (error) {
+      // Error saving data
+    }
   };
   render() {
     return (
@@ -29,10 +39,11 @@ export default class Welcome extends Component {
           onChangeText={this._onChangeText}
         />
         <Button
+          disabled={this.state.isUserName}
           btnValue={'Bắt đầu nào!'}
           name={'language'}
           onPressSubmit={this._onPressSubmit}
-          colorButton={'#FF6F91'}
+          colorButton={this.state.buttonColor}
         />
       </LinearGradient>
     );

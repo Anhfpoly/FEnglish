@@ -7,19 +7,22 @@ export default class Answer extends Component {
   render() {
     return (
       <TouchableOpacity
-      disabled={this.props.disabled}
-        style={[{
-          flexDirection: 'row',
-          marginVertical: 3,
-          backgroundColor: this.props.colorAnswer,
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-          padding: 7,
-          borderRadius: 10,
-          marginHorizontal: 6,
-          width: 320,
-          height: 40,
-        }, this.props.overideStyle]}
+        disabled={this.props.disabled}
+        style={[
+          {
+            flexDirection: 'row',
+            marginVertical: 3,
+            backgroundColor: this.props.colorAnswer,
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            padding: 7,
+            borderRadius: 10,
+            marginHorizontal: 6,
+            width: 320,
+            height: 40,
+          },
+          this.props.overideStyle,
+        ]}
         onPress={this.props.onPressAnswer}>
         <Text style={styles.btnText}>{this.props.answer}</Text>
       </TouchableOpacity>

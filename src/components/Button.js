@@ -7,6 +7,7 @@ export default class TextInputComponent extends Component {
   render() {
     return (
       <TouchableOpacity
+        disabled={this.props.disabled}
         style={{
           flexDirection: 'row',
           marginVertical: 10,

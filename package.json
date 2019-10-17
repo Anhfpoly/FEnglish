@@ -12,7 +12,8 @@
     "ioslink": "cd ios && pod install && cd ..",
     "getkey": "keytool -genkey -v -keystore ./android/app/debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000",
     "getcer": "keytool -list -v -keystore ./android/app/debug.keystore -alias androiddebugkey -storepass android -keypass android",
-    "keyhash": "keytool -exportcert -alias androiddebugkey -keystore ./android/app/debug.keystore | openssl sha1 -binary | openssl base64"
+    "keyhash": "keytool -exportcert -alias androiddebugkey -keystore ./android/app/debug.keystore | openssl sha1 -binary | openssl base64",
+    "build": "cd android && ./gradlew bundleRelease && cd .."
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",

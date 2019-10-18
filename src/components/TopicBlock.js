@@ -6,7 +6,6 @@ export default class TopicBlock extends Component {
   render() {
     const {topicData, defaultTopicData,topic} = this.props;
     let topicFiltered = []
-    
     if(topicData) {   
       topicFiltered = topicData.filter(item => item.levels === defaultTopicData.level && topic === item.topics)
     }

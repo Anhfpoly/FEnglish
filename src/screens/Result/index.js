@@ -34,7 +34,7 @@ export default class Result extends Component {
       let oldData = await getData('points');
       if (oldData) {
         oldData = JSON.parse(oldData);
-        let dataIndex = oldData.findIndex(item => item.levels === data.levels);
+        let dataIndex = oldData.findIndex(item => item.levels === data.levels && item.topics === data.topics);
         if (dataIndex !== -1 && oldData[dataIndex].point < data.point) {
           oldData[dataIndex] = data;
           await AsyncStorage.setItem('points', JSON.stringify(oldData));

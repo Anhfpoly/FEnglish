@@ -32,9 +32,8 @@ export default class Levels extends Component {
   _onPressLevel = (value, value2) => {
     let topicFiltered = DATA.filter(item => item.level === 'lv' + value && item.topic === value2);
     if(this.state.pointsData) {
-      let result = this.state.pointsData.map(({ levels }) => levels)
-      var maxLevels = Math.max.apply(Math, result);
-      if(value <= maxLevels + 1) {
+      let filterTopic = this.state.pointsData.filter(({topics}) => topics === value2);
+      if(value <= filterTopic.length + 1) {
         if(topicFiltered.length > 0) {
           this.props.navigation.navigate('Lessons', {levels: value, topics: value2});
         }else {
